@@ -9,7 +9,7 @@ public class Hello extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 		System.out.println("in execute of java");
-		 callbackContext.success(message);
+
         if (action.equals("greet")) {
 
             String name = data.getString(0);
